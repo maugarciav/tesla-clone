@@ -4,7 +4,7 @@ import TeslaLogo from "../assets/TeslaLogo";
 
 const NavBar = () => {
   return (
-    <div className= "flex justify-between items-center p-4 text-sm font-bold">
+    <div className= "flex justify-between items-center p-4 px-8 text-xs font-semibold">
       <div>
         <TeslaLogo/>
       </div>
