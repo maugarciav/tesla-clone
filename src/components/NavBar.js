@@ -1,25 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import TeslaLogo from "../assets/TeslaLogo";
+import Icon from "../components/Icon"
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between items-center p-4 px-8 text-xs font-semibold">
-      <div>
+    <div className=" z-[20] flex justify-between items-center p-4 px-8 text-xs font-semibold">
+      <div className="z-[20]">
         <a href="https://tesla.com">
           <TeslaLogo />
         </a>
       </div>
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer">
-          <SideBarIcon icon={"Vehicles"} />
-          <SideBarIcon icon={"Energy"} />
-          <SideBarIcon icon={"Charging"} />
-          <SideBarIcon icon={"Discover"} />
-          <SideBarIcon icon={"Shop"} />
+          <Icon icon={"Vehicles"} />
+          <Icon icon={"Energy"} />
+          <Icon icon={"Charging"} />
+          <Icon icon={"Discover"} />
+          <Icon icon={"Shop"} />
         </ul>
       </div>
 
-      <div className="hidden lg:inline">
+      <div className="hidden lg:inline z-[20]">
         <ul className="flex justify-center hover:cursor-auto">
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Shop</li>
           <li className="py-1 px-3 hover:rounded hover:bg-black/5">Account</li>
@@ -36,15 +37,7 @@ const NavBar = () => {
   );
 };
 
-const SideBarIcon = ({ icon, text = "tooltip" }) => (
-  <>
-    <li className="py-1 px-3 hover:rounded hover:bg-black/5 group">
-      {icon}
-    <div className="absolute inset-0 bottom-[40%] scale-0 shadow-lg bg-white duration-500 origin-top  group-hover:scale-100">
-      {icon}
-    </div>
-    </li>
-  </>
-);
 
 export default NavBar;
+
+
