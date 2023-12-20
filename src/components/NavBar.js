@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import TeslaLogo from "../assets/TeslaLogo";
 import Icon from "../components/Icon"
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
+import { TbWorld } from "react-icons/tb";
+import { CgProfile } from "react-icons/cg";
+
+
 
 const NavBar = () => {
   return (
@@ -22,9 +27,10 @@ const NavBar = () => {
 
       <div className="hidden lg:inline z-[20]">
         <ul className="flex justify-center hover:cursor-auto">
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Shop</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Account</li>
-          <li className="py-1 px-3 hover:rounded hover:bg-black/5">Menu</li>
+          <li className="py-1 px-2  text-xl hover:rounded hover:bg-black/5"><HiOutlineQuestionMarkCircle/></li>
+          <li className="py-1 px-2 text-xl hover:rounded hover:bg-black/5"><TbWorld/></li>
+          <li className="py-1 px-2 text-xl hover:rounded hover:bg-black/5"><CgProfile/></li>
+          
         </ul>
       </div>
 

@@ -14,7 +14,7 @@ const Icon = ({ icon }) => {
       <li
         onMouseOver={toggleNavBar}
         onMouseLeave={toggleNavBar}
-        className="selection:py-1 px-3 z-[20] hover:rounded hover:bg-black/5"
+        className="py-2 px-3 z-[20] hover:rounded hover:bg-black/5"
       >
         {icon}
       </li>
